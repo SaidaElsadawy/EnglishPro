@@ -1,0 +1,557 @@
+:root {
+  --navy: #0f2747;
+  --blue: #1769aa;
+  --cyan: #22b8cf;
+  --cream: #f7fbff;
+  --text: #142235;
+  --muted: #64748b;
+  --white: #fff;
+  --green: #25d366;
+  --border: #e5edf5;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  color: var(--text);
+  background: var(--white);
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 18px rgba(15, 39, 71, 0.07);
+}
+
+/* =================================
+   THEME VARIABLES
+================================= */
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #dbeafe;
+  --accent-color: #1d4ed8;
+
+  --bg-color: #ffffff;
+  --section-bg: #f8fafc;
+  --card-bg: #ffffff;
+
+  --text-color: #1f2937;
+  --heading-color: #0f172a;
+
+  --border-color: #e5e7eb;
+
+  --transition: 0.3s ease;
+}
+
+/* =================================
+   PURPLE THEME
+================================= */
+
+[data-color="purple"] {
+  --primary-color: #7c3aed;
+  --secondary-color: #ede9fe;
+  --accent-color: #6d28d9;
+}
+
+/* =================================
+   GREEN THEME
+================================= */
+
+[data-color="green"] {
+  --primary-color: #059669;
+  --secondary-color: #d1fae5;
+  --accent-color: #047857;
+}
+
+/* =================================
+   DARK MODE
+================================= */
+
+body.dark-mode {
+  --bg-color: #0b0f19;
+  --section-bg: #111827;
+  --card-bg: #1f2937;
+
+  --text-color: #e5e7eb;
+  --heading-color: #ffffff;
+
+  --border-color: #374151;
+}
+
+/* =================================
+   BODY
+================================= */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+/* =================================
+   HEADINGS
+================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+
+  transition: color var(--transition);
+}
+
+/* =================================
+   NAVBAR
+================================= */
+
+.navbar {
+  background-color: var(--bg-color) !important;
+
+  transition: background-color var(--transition);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* =================================
+   HERO
+================================= */
+
+.hero {
+  background: linear-gradient(135deg, #000000, var(--primary-color));
+
+  transition: background var(--transition);
+}
+
+/* =================================
+   SECTIONS
+================================= */
+
+.section-light {
+  background-color: var(--section-bg);
+
+  transition: background-color var(--transition);
+}
+
+/* =================================
+   CARDS
+================================= */
+
+.card,
+.course-card,
+.price-card,
+.testimonial,
+.why-box,
+.booking-card {
+  background-color: var(--card-bg);
+
+  color: var(--text-color);
+
+  border-color: var(--border-color);
+
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+}
+
+/* =================================
+   CARD HOVER
+================================= */
+
+.course-card:hover,
+.price-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* =================================
+   ICONS
+================================= */
+
+.course-icon {
+  background-color: var(--secondary-color);
+
+  color: var(--primary-color);
+
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+/* =================================
+   LINKS
+================================= */
+
+a {
+  transition: color var(--transition);
+}
+
+/* =================================
+   FORM
+================================= */
+
+.form-control,
+.form-select {
+  background-color: var(--card-bg);
+
+  color: var(--text-color);
+
+  border: 1px solid var(--border-color);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+
+  box-shadow: 0 0 0 0.2rem
+    color-mix(in srgb, var(--primary-color) 20%, transparent);
+}
+
+/* =================================
+   BOOKING SECTION
+================================= */
+
+.booking-section {
+  background-color: var(--secondary-color);
+
+  transition: background-color var(--transition);
+}
+
+.teacher-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* display:flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* overflow: hidden; */
+  /* background: #f5f5f5; */
+}
+.brand {
+  font-weight: 900;
+  color: var(--navy) !important;
+}
+.brand span {
+  color: var(--cyan);
+}
+.hero {
+  background: linear-gradient(135deg, #eef8ff 0%, #fff 58%, #e9fbf7 100%);
+  padding: 110px 0 80px;
+  overflow: hidden;
+}
+.badge-soft {
+  display: inline-block;
+  background: #dff7fb;
+  color: #087f92;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.hero h1 {
+  font-size: clamp(2.3rem, 5vw, 4.4rem);
+  font-weight: 900;
+  line-height: 1.12;
+  color: var(--navy);
+}
+.hero h1 span {
+  color: var(--blue);
+}
+.hero p {
+  font-size: 1.12rem;
+  color: var(--muted);
+  line-height: 1.9;
+}
+.btn-main {
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 22px;
+  font-weight: 800;
+}
+.btn-main:hover {
+  background: #193e69;
+  color: #fff;
+}
+.btn-wa {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 22px;
+  font-weight: 800;
+}
+.btn-wa:hover {
+  background: #1db954;
+  color: #fff;
+}
+.teacher-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 18px;
+  box-shadow: 0 20px 60px rgba(15, 39, 71, 0.12);
+  transform: rotate(1deg);
+}
+.teacher-photo {
+  height: 390px;
+  border-radius: 22px;
+  background: linear-gradient(160deg, #cdefff, #edf8ff);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  overflow: hidden;
+}
+.avatar {
+  width: 235px;
+  height: 300px;
+  border-radius: 130px 130px 30px 30px;
+  background: linear-gradient(180deg, #244a72, #0f2747);
+  position: relative;
+}
+.avatar:before {
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background: #c98e6b;
+  top: 25px;
+  left: 65px;
+}
+.avatar:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  border-radius: 50% 50% 20px 20px;
+  background: #172e4c;
+  top: 8px;
+  left: 43px;
+}
+.floating {
+  position: absolute;
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 13px 16px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(15, 39, 71, 0.1);
+  font-weight: 800;
+}
+.f1 {
+  top: 28px;
+  right: -18px;
+}
+.f2 {
+  bottom: 25px;
+  left: -18px;
+}
+.section {
+  padding: 85px 0;
+}
+.section-alt {
+  background: var(--cream);
+}
+.section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+.section-title h2 {
+  font-weight: 900;
+  color: var(--navy);
+  font-size: 2.2rem;
+}
+.section-title p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+.stat {
+  padding: 22px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.stat strong {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--blue);
+}
+.service {
+  height: 100%;
+  padding: 28px;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid var(--border);
+  transition: 0.25s;
+}
+.service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(15, 39, 71, 0.09);
+}
+.icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  background: #e7f8fb;
+  color: #07859a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+}
+.service h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.service p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+.review {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 25px;
+  height: 100%;
+}
+.stars {
+  color: #f5b301;
+  letter-spacing: 2px;
+}
+.price {
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 30px;
+  background: #fff;
+  height: 100%;
+}
+.price.featured {
+  border: 2px solid var(--blue);
+  box-shadow: 0 15px 40px rgba(23, 105, 170, 0.12);
+}
+.price h3 {
+  font-weight: 900;
+  color: var(--navy);
+}
+.price .amount {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--blue);
+}
+.price ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2.2;
+  color: var(--muted);
+}
+.faq button {
+  width: 100%;
+  text-align: right;
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.faq .answer {
+  display: none;
+  padding: 0 18px 15px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.booking {
+  background: var(--navy);
+  color: #fff;
+  border-radius: 30px;
+  padding: 42px;
+}
+.booking .form-control,
+.booking .form-select {
+  border-radius: 12px;
+  padding: 13px;
+  border: 0;
+}
+.footer {
+  background: #0a1b31;
+  color: #d9e5f2;
+  padding: 35px 0;
+}
+.wa-float {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  z-index: 1000;
+}
+.small-muted {
+  color: #94a3b8;
+}
+.nav-link {
+  font-weight: 700;
+  color: #334155 !important;
+}
+.nav-link:hover {
+  color: var(--blue) !important;
+}
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 80px;
+  }
+  .teacher-card {
+    margin-top: 30px;
+  }
+  .f1 {
+    right: 5px;
+  }
+  .f2 {
+    left: 5px;
+  }
+}
